@@ -1,0 +1,20 @@
+{
+  "name": "deploytest",
+  "version": "1.0.0",
+  "description": "Deploy to Heroku",
+  "main": "server.js",
+  "scripts": {
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "env": "^0.0.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10"
+  }
+}
